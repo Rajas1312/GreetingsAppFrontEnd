@@ -1,8 +1,21 @@
-body {
-    background-color: lightblue;
-  }
-  
-  h1 {
-    color: navy;
-    margin-left: 20px;
-  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p1{
+    font-size: 20px;
+}
+.header-bar {
+    background-color: #f3f1f1;
+    box-shadow: 2px 2px 5px rgba(119, 118, 118, 0.6);
+}
+
+.header-bar #a {
+    display: -ms-inline-flexbox;
+    height: 20px;
+    width: 25px;
+}
+
+
+
