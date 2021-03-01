@@ -1,15 +1,15 @@
-*{
-    box-sizing: border-box;
-}
+
+
 body{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
 }
 .header-bar h2{
     padding: 4px 8px 4px 15px;
     font-size: 20px;
     position: relative;
     left: 200px;
+    width: 100%; 
 }
 .header-bar {
     background-color: #f3f1f1;
@@ -119,7 +119,7 @@ body{
 }
 
 .sidenav a:hover {
-    color: #152ae9;
+    color: #293ef6;
 }
 
 .sidenav a img {
@@ -136,7 +136,7 @@ body{
   
 .greetings{
     background-color: rgb(255, 251, 251);
-    box-shadow: 2px 2px 5px rgb(172, 163, 163) ;
+    box-shadow: 2px 2px 5px 2px rgb(172, 163, 163) ;
     position: relative;
     left: 20%;
     width: 20%;
@@ -174,6 +174,54 @@ body{
     bottom: 61px;
 }
 #time{
+    margin: 0%;
+    color: rgb(36, 33, 34);
+    position: relative;
+    left: 7%;
+    padding: 4px;
+    bottom: 40px;
+}
+
+/* .greetingsA{
+    background-color: rgb(255, 251, 251);
+    box-shadow: 2px 2px 5px rgb(172, 163, 163) ;
+    position: relative;
+    left: 45%;
+    width: 20%;
+} */
+.greetingsA h4{
+    margin: 2%;
+    color: rgb(36, 33, 34);
+    position: relative;
+    left: 5%;
+    padding: 4px;
+}
+.greetingsA p1{
+    margin: 0%;
+    top:4px;
+    color: rgb(36, 33, 34);
+    position: relative;
+    left: 5%;
+    padding: 4px;
+}
+
+#greetA{
+    margin: 2%;
+    color: rgb(36, 33, 34);
+    position: relative;
+    left: 20%;
+    padding: 4px;
+    bottom: 61px;
+}
+#nameA{
+    margin: 0%;
+    color: rgb(36, 33, 34);
+    position: relative;
+    left: 22%;
+    padding: 4px;
+    bottom: 61px;
+}
+#timeA{
     margin: 0%;
     color: rgb(36, 33, 34);
     position: relative;
