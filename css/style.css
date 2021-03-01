@@ -1,19 +1,25 @@
 
-
+*{
+    box-sizing: border-box;
+}
 body{
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
 }
 .header-bar h2{
     padding: 4px 8px 4px 15px;
     font-size: 20px;
     position: relative;
     left: 200px;
-    width: 100%; 
 }
 .header-bar {
     background-color: #f3f1f1;
     box-shadow: 2px 2px 5px rgba(122, 122, 122, 0.6);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .header-bar h2{
     margin: 0;
@@ -25,14 +31,12 @@ body{
     height: 20px;
     width: 25px;
     position: relative;
-    left: 1000px;
 }
 .header-bar #message {
     display: -ms-inline-flexbox;
     height: 20px;
     width: 25px;
     position: relative;
-    left: 1005px;
 }
 
 .header-bar #question {
@@ -40,7 +44,6 @@ body{
     height: 20px;
     width: 25px;
     position: relative;
-    left: 1010px;
 }
 
 .header-bar #tools {
@@ -48,7 +51,6 @@ body{
     height: 20px;
     width: 25px;
     position: relative;
-    left: 1015px;
 }
 
 
@@ -65,26 +67,18 @@ body{
   }
 
   .sign-in {
-    display: -ms-inline-flexbox;
     color: rgb(10, 176, 241);
     padding-top: 0px;
-    left: 1020px;
     color: rgb(10, 176, 241);
     position: relative;
-    bottom: 2px;
-    top: 8px;
 }
 
 .sign-up {
-    display: -ms-inline-flexbox;
     font-size: 13px;
     background-color: blue;
     color: rgb(5, 224, 253);
     border-radius: 25px;
     position: relative;
-    left:1025px;
-    bottom: 2px;
-    top: 8px;
 
 }
 
@@ -96,6 +90,8 @@ body{
     top: 0;
     left: 0;
     background-color:rgb(168, 164, 164);
+    background-image: url('Assests/question.svg');
+    background-repeat: no-repeat;
     overflow-x: hidden;
     padding-top: 20px;
   }
@@ -119,7 +115,7 @@ body{
 }
 
 .sidenav a:hover {
-    color: #293ef6;
+    color: #152ae9;
 }
 
 .sidenav a img {
@@ -131,101 +127,51 @@ body{
 .basic-layout h2{
     color: black;
     position: relative;
-    left: 20%;
+    padding-left: 20%;
 }
-  
+
+.greetingsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 18.5%;
+}
+
 .greetings{
-    background-color: rgb(255, 251, 251);
-    box-shadow: 2px 2px 5px 2px rgb(172, 163, 163) ;
-    position: relative;
-    left: 20%;
-    width: 20%;
-}
-.greetings h4{
-    margin: 2%;
-    color: rgb(36, 33, 34);
-    position: relative;
-    left: 5%;
-    padding: 4px;
-}
-.greetings p1{
-    margin: 0%;
-    top:4px;
-    color: rgb(36, 33, 34);
-    position: relative;
-    left: 5%;
-    padding: 4px;
-}
-
-#greet{
-    margin: 2%;
-    color: rgb(36, 33, 34);
-    position: relative;
-    left: 20%;
-    padding: 4px;
-    bottom: 61px;
-}
-#name{
-    margin: 0%;
-    color: rgb(36, 33, 34);
-    position: relative;
-    left: 22%;
-    padding: 4px;
-    bottom: 61px;
-}
-#time{
-    margin: 0%;
-    color: rgb(36, 33, 34);
-    position: relative;
-    left: 7%;
-    padding: 4px;
-    bottom: 40px;
-}
-
-/* .greetingsA{
     background-color: rgb(255, 251, 251);
     box-shadow: 2px 2px 5px rgb(172, 163, 163) ;
     position: relative;
-    left: 45%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
     width: 20%;
-} */
-.greetingsA h4{
-    margin: 2%;
-    color: rgb(36, 33, 34);
-    position: relative;
-    left: 5%;
-    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
-.greetingsA p1{
-    margin: 0%;
-    top:4px;
-    color: rgb(36, 33, 34);
-    position: relative;
-    left: 5%;
-    padding: 4px;
+.greetings div {
+    display: flex;
+    width:100%;
+    height: 40px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center
 }
-
-#greetA{
-    margin: 2%;
-    color: rgb(36, 33, 34);
-    position: relative;
-    left: 20%;
-    padding: 4px;
-    bottom: 61px;
+.greetings div h4 {
+    padding-right: 5px;
 }
-#nameA{
-    margin: 0%;
-    color: rgb(36, 33, 34);
-    position: relative;
-    left: 22%;
-    padding: 4px;
-    bottom: 61px;
+.image{
+    display: flex;
+    width: 30%;
+    justify-content:space-evenly;
+    flex-direction: row;
+    align-items: center;
+    /* align-items: center; */
 }
-#timeA{
-    margin: 0%;
-    color: rgb(36, 33, 34);
-    position: relative;
-    left: 7%;
-    padding: 4px;
-    bottom: 40px;
+.image div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* align-items: center; */
 }
