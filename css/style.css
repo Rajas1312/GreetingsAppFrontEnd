@@ -27,46 +27,25 @@ body{
 }
 
 .header-bar #notification {
-    display: -ms-inline-flexbox;
     height: 20px;
     width: 25px;
-    position: relative;
 }
 .header-bar #message {
-    display: -ms-inline-flexbox;
     height: 20px;
     width: 25px;
-    position: relative;
 }
 
 .header-bar #question {
-    display: -ms-inline-flexbox;
     height: 20px;
     width: 25px;
-    position: relative;
 }
 
 .header-bar #tools {
-    display: -ms-inline-flexbox;
     height: 20px;
     width: 25px;
-    position: relative;
 }
 
-
-.header-bar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #dbd6d6;
-  }
-  
-  .header-bar li {
-    float: left;
-  }
-
-  .sign-in {
+.sign-in {
     color: rgb(10, 176, 241);
     padding-top: 0px;
     color: rgb(10, 176, 241);
@@ -139,7 +118,7 @@ body{
 
 .greetings{
     background-color: rgb(255, 251, 251);
-    box-shadow: 2px 2px 5px rgb(172, 163, 163) ;
+    box-shadow: 2px 2px 5px 2px rgb(172, 163, 163) ;
     position: relative;
     margin-left: 20px;
     margin-bottom: 20px;
