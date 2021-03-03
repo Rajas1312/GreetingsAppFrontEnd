@@ -5,6 +5,7 @@ fetch('http://localhost:8000/greeting/')
         for (let i = 0; i < data.result.length; i++) {
             var timeDiv = `
                       <button onclick="edit('${data.result[i]._id}')">Edit</button>
+                    <button onclick="remove('${data.result[i]._id}')">Delete</button>
                         <div>
                             <h4>${data.result[i].greeting}</h4>
                             <span>(greetings)</span>
@@ -56,12 +57,14 @@ function display() {
     document.querySelector('.greetings-form').style.display = 'block';
 }
 
+function remove(b) {
+    fetch('http://localhost:8000/greeting/' + b, {
+        method: 'DELETE',
+    })
+        .then(res => res.json())
+        .then(res => console.log(res))
+}
 
-// fetch('http://localhost:8000/greeting/603e3c115e318d04e45caa8b', {
-//     method: 'DELETE',
-// })
-//     .then(res => res.json())
-//     .then(res => console.log(res))
 
 
 
