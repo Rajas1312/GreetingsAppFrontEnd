@@ -150,3 +150,12 @@ body{
     align-items: center;
     /* align-items: center; */
 }
+.greetings-form{
+    display: none;
+    justify-content: center;
+    margin: 10px;
+}
+
+input {
+    width:140px;
+}

@@ -30,9 +30,18 @@
 
     <div class="sidenav">
         <a><img src="Assets/list_icon3.png">list</a>
-        <a><img src="Assets/add_icon3.png"> add </a>
+        <a id="add" onclick="display()"><img src="Assets/add_icon3.png"> add </a>
         <a><img src="Assets/edit_icon3.png"> edit </a>
         <a><img src="Assets/delete_icon3.png"> delete </a>
+        <div class="greetings-form">
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe">
+                <button onclick="gg()">Button</button>
+            </form>
+        </div>
     </div>
 
     <layout>
@@ -46,6 +55,8 @@
 
     </div>
     <script src="script.js"></script>
+
+
 </body>
 
 </html>
