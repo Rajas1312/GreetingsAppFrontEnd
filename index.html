@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <title>Greeting Message App</title>
 </head>
 
@@ -29,19 +31,10 @@
     </div>
 
     <div class="sidenav">
-        <a><img src="Assets/list_icon3.png">list</a>
-        <a id="add" onclick="display()"><img src="Assets/add_icon3.png"> add </a>
-        <a><img src="Assets/edit_icon3.png"> edit </a>
-        <a><img src="Assets/delete_icon3.png"> delete </a>
-        <div class="greetings-form">
-            <form>
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname" value="John"><br>
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname" value="Doe">
-                <button onclick="create()">Button</button>
-            </form>
-        </div>
+        <a><img src="assets/list_icon3.png">list</a>
+        <a id="add" onclick="display()"><img src="assets/add_icon3.png"> add </a>
+        <a><img src="assets/edit_icon3.png"> edit </a>
+        <a><img src="assets/delete_icon3.png"> delete </a>
     </div>
 
     <layout>
@@ -49,11 +42,20 @@
             <h2>Basic panels layout </h2>
         </div>
     </layout>
-
+    <div class="greetings-form">
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe">
+            <input value="" id="id_store" style="display: none;">
+            <button onclick="create()">Button</button>
+        </form>
+    </div>
     <div class="greetingsContainer">
 
-
     </div>
+
     <script src="script.js"></script>
 
 
