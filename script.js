@@ -15,8 +15,8 @@ function findAllGreetings() {
                         </div>
                         <div class="time-edit-button">
                             <span>${data.result[greet].updatedAt}</span></span>
-                            <button onclick="editGreetings('${data.result[greet]._id}','${data.result[greet].greeting}','${data.result[greet].name}')"><i class="fa fa-edit " ></i></onclick=>
-                            <button onclick="removeById('${data.result[greet]._id}')"<i class="fa fa-trash " ></i></button>
+                            <div><a id="edit-greetings" onclick="editGreetings('${data.result[greet]._id}','${data.result[greet].greeting}','${data.result[greet].name}')"><img src="assets/edit_icon3.png" style="height:20px;></a></div>
+                           <div> <a id="delete-greetings" onclick="removeById('${data.result[greet]._id}')"><img src="assets/delete_icon3.png" style="height:20px"></a></div> 
                         </div>
                     `
                 let div = document.createElement("div");

@@ -191,4 +191,8 @@ input, label {
 #id_del{
     display: none;
 }
- 
+
+#edit-greetings{
+    height:20px;
+    width:20px;
+}
