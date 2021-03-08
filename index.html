@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Greeting Message App</title>
 </head>
 
@@ -21,12 +23,8 @@
             <div><img id="message" src="./Assets/message1.svg"></div>
             <div><img id="question" src="./Assets/question .svg">support</div>
             <div><img id="tools" src="./Assets/tools.svg">tools</div>
-            <div>
-                <button class="sign-in">SignIn</button>
-            </div>
-            <div>
-                <button class="sign-up">SignUp</button>
-            </div>
+            <div> <button class="sign-in">SignIn</button></div>
+            <div><button class="sign-up">SignUp</button></div>
         </div>
     </div>
 
@@ -42,18 +40,45 @@
             <h2>Basic panels layout </h2>
         </div>
     </layout>
-    <div class="greetings-form">
-        <form>
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" value="John"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" value="Doe">
-            <input value="" id="id_store" style="display: none;">
-            <button onclick="create()">Button</button>
-        </form>
-    </div>
-    <div class="greetingsContainer">
 
+    <div class="greetingsContainer"></div>
+
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+            <header class="w3-container w3-teal">
+                <h2>Modal Header</h2>
+            </header>
+            <div class="w3-container" style="padding:0%;">
+                <div class="greetings-form">
+                    <form>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname" pattern="[A-Z]{1}[a-z]{2,}" value=""><br>
+                        <label for="lname">Greetings:</label><br>
+                        <input type="text" id="lname" name="lname" pattern="[A-Z]{1}[a-z]{2,}" value="">
+                        <input value="" id="id_store" style="display: none;">
+                        <button onclick="create()">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="id02" class="w3-modal">
+        <div class="w3-modal-content">
+            <header class="w3-container w3-teal">
+                <h2>Modal Header</h2>
+            </header>
+            <div class="w3-container" style="padding:0%;">
+                <div class="greetings-form">
+                    <form>
+                        <label>Are you sure you want to delete</label><br>
+                        <input value="" id="id_del" style="display: none;">
+                        <button onclick="remove()">Yes</button>
+                        <button onclick="document.getElementById('id02').style.display='none'">No</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
