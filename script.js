@@ -96,10 +96,10 @@ editGreetings = (id, greeting, name) => {
 }
 
 regexValidation = () => {
-    // document.querySelector('#edit-fname').pattern = r
-    // document.querySelector('#edit-lname').pattern = r
-    document.querySelector('#fname').pattern = '/[a-z]/g'
-    document.querySelector('#lname').pattern = '/[a-z]/g'
+    document.querySelector('#edit-fname').setAttribute('pattern', '[A-Z]{1}[a-z]{2,}');
+    document.querySelector('#edit-lname').setAttribute('pattern', '[A-Z]{1}[a-z]{2,}');
+    document.querySelector('#fname').setAttribute('pattern', '[A-Z]{1}[a-z]{2,}');
+    document.querySelector('#lname').setAttribute('pattern', '[A-Z]{1}[a-z]{2,}');
 }
 regexValidation()
 
