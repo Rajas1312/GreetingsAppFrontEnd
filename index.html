@@ -29,7 +29,7 @@
     </div>
 
     <div class="sidenav">
-        <a><img src="assets/list_icon3.png">list</a>
+        <a><img src="assets/list_icon3.png"> list </a>
         <a id="add" onclick="display()"><img src="assets/add_icon3.png"> add </a>
         <a><img src="assets/edit_icon3.png"> edit </a>
         <a><img src="assets/delete_icon3.png"> delete </a>
@@ -45,52 +45,62 @@
 
     <div id="add-greetingId" class="w3-modal">
         <div class="w3-modal-content">
-            <!-- <header class="w3-container w3-teal">
-                <h2>Add</h2>
-            </header> -->
-            <div class="w3-container">
+            <div class="form-container">
                 <div class="greetings-form">
                     <form>
-                        <label for="fname">First name:</label><br>
-                        <input type="text" id="fname" name="fname" autocomplete="off" pattern="[A-Z]{}[a-z]{2,1}"
-                            value=""><br>
-                        <label for="lname">Greetings:</label><br>
-                        <input type="text" id="lname" name="lname" autocomplete="off" pattern="[A-Z]{}[a-z]{2,1}"
-                            value="">
-                        <input value="" id="id_store" style="display: none;">
+                        <div><label for="fname">First name:</label></div>
+                        <div><input type="text" id="fname" name="fname" autocomplete="off" pattern="[A-Z]{1}[a-z]{2,}"
+                                value="" required></div>
+                        <div><label for="lname">Greetings:</label></div>
+                        <div><input type="text" id="lname" name="lname" autocomplete="off" pattern="[A-Z]{1}[a-z]{2,}"
+                                value="" required></div>
+                        <input value="" id="id_store">
                         <div class="submit">
                             <button onclick="create()">Submit</button>
                         </div>
-
                     </form>
                 </div>
             </div>
         </div>
     </div>
 
-
+    <div id="edit-greetingId" class="w3-modal">
+        <div class="w3-modal-content">
+            <div class="form-container">
+                <div class="greetings-form">
+                    <form>
+                        <div><label for="edit-fname"> Edit First name:</label></div>
+                        <div><input type="text" id="edit-fname" name="edit-fname" autocomplete="off"
+                                pattern="[A-Z]{1}[a-z]{2,}" value=""></div>
+                        <div><label for="edit-lname"> Edit Greetings:</label></div>
+                        <div><input type="text" id="edit-lname" name="edit-lname" autocomplete="off"
+                                pattern="[A-Z]{1}[a-z]{2,}" value=""></div>
+                        <div><input value="" id="id_edit_store" style="display: none;"></div>
+                        <div class="submit">
+                            <button onclick="updateGreetings()">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div id="delete-greetingId" class="w3-modal">
         <div class="w3-modal-content">
-            <!-- <header class="w3-container w3-teal">
-                <h2>Delete</h2>
-            </header> -->
-            <div class="w3-container1" style="padding:0%;">
+            <div class="form-container">
                 <div class="greetings-form">
                     <form>
                         <label>Are you sure you want to delete</label><br>
                         <input value="" id="id_del">
                         <button onclick="remove()">Yes</button>
-                        <button onclick="document.getElementById('id02')">No</button>
+                        <button onclick="document.getElementById('delete-greetingId')">No</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 
-
     <script src="script.js"></script>
-
 
 </body>
 
