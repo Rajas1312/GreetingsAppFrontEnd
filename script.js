@@ -95,7 +95,13 @@ editGreetings = (id, greeting, name) => {
     document.querySelector('#id_edit_store').value = id;
 }
 
-
+regexValidation = () => {
+    // document.querySelector('#edit-fname').pattern = r
+    // document.querySelector('#edit-lname').pattern = r
+    document.querySelector('#fname').pattern = '/[a-z]/g'
+    document.querySelector('#lname').pattern = '/[a-z]/g'
+}
+regexValidation()
 
 
 
