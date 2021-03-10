@@ -32,14 +32,14 @@ findAllGreetings = () => {
 }
 findAllGreetings()
 
-create = () => {
+createGreetings = () => {
     fetch(URL, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         }, body: JSON.stringify({
             name: document.querySelector('#fname').value,
-            greeting: document.querySelector('#lname').value
+            greeting: document.querySelector('#greeting').value
         })
     })
     document.querySelector('.greetings-form').style.display = 'flex';
@@ -52,7 +52,7 @@ updateGreetings = () => {
             'Content-Type': 'application/json'
         }, body: JSON.stringify({
             name: document.querySelector('#edit-fname').value,
-            greeting: document.querySelector('#edit-lname').value
+            greeting: document.querySelector('#edit-greeting').value
         })
     })
         .then(res => res.json())
@@ -91,15 +91,15 @@ editGreetings = (id, greeting, name) => {
     document.getElementById('edit-greetingId').style.display = 'block'
     document.getElementById('delete-greetingId').style.display = 'none';
     document.querySelector('#edit-fname').value = name;
-    document.querySelector('#edit-lname').value = greeting;
+    document.querySelector('#edit-greeting').value = greeting;
     document.querySelector('#id_edit_store').value = id;
 }
 
 regexValidation = () => {
     document.querySelector('#edit-fname').setAttribute('pattern', '[A-Z]{1}[a-z]{2,}');
-    document.querySelector('#edit-lname').setAttribute('pattern', '[A-Z]{1}[a-z]{2,}');
+    document.querySelector('#edit-greeting').setAttribute('pattern', '[A-Z]{1}[a-z]{2,}');
     document.querySelector('#fname').setAttribute('pattern', '[A-Z]{1}[a-z]{2,}');
-    document.querySelector('#lname').setAttribute('pattern', '[A-Z]{1}[a-z]{2,}');
+    document.querySelector('#greeting').setAttribute('pattern', '[A-Z]{1}[a-z]{2,}');
 }
 regexValidation()
 

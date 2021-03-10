@@ -154,22 +154,43 @@ body{
 }
 .greetings-form{
     display: flex;
-    background-color: rgb(255, 251, 251);
+    background-color: rgb(255, 255, 255);
     box-shadow: 2px 2px 5px 2px rgb(172, 163, 163) ;
     justify-content: left;
     align-items: center;
-    width: fit-content;
-    height: fit-content;
-    position: absolute;
+    width: 20%;
+    position:absolute;
     margin-right: 7%;
-    opacity: 70%;
+    padding-left: 1%;
+    border-radius: 5px;
+    /* opacity: 70%; */
 }
-input, label {
-    width:340px;
+
+.label {
+    width:200px;
     font-size: 30px;
 }
 
+.input {
+    width:100px;
+    font-size: 20px;
+}
+
+.title-container{
+    margin: 0%;
+    display: flex;
+    justify-content: left;
+}
+.modal-content{
+    display: flex;
+    justify-content: center;
+}
+
 #id_store{
+    display: none;
+}
+
+#id_edit_store{
     display: none;
 }
 
@@ -193,11 +214,23 @@ input, label {
 }
 
 .form-container{
-    margin: 27%;
+    margin: 0%;
     padding: 0%;
 }
 .time{
     margin-top: 0px;
     padding-top: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.submit{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.greetings-header{
+    display: flex;
+    justify-content: right;
+    background-color: teal;
+    padding-left: 40px;
 }

@@ -44,60 +44,60 @@
     <div class="greetingsContainer"></div>
 
     <div id="add-greetingId" class="w3-modal">
-        <div class="w3-modal-content">
-            <div class="form-container">
-                <div class="greetings-form">
-                    <form>
-                        <div><label for="fname">First name:</label></div>
-                        <div><input type="text" id="fname" name="fname" autocomplete="off" value="" required>
-                        </div>
-                        <div><label for="lname">Greetings:</label></div>
-                        <div><input type="text" id="lname" name="lname" autocomplete="off" value="" required>
-                        </div>
-                        <input value="" id="id_store">
-                        <div class="submit">
-                            <button onclick="create()">Submit</button>
-                        </div>
-                    </form>
-                </div>
+        <div class="modal-content">
+            <div class="greetings-form">
+                <form>
+                    <div class="label">Add Greetings</div>
+                    <div class="label"><label for="fname">Name</label></div>
+                    <div class="input"><input type="text" id="fname" name="fname" autocomplete="off" value="" required>
+                    </div>
+                    <div class="label"><label for="greeting">Greetings</label></div>
+                    <div class="input"><input type="text" id="greeting" name="greeting" autocomplete="off" value=""
+                            required>
+                    </div>
+                    <input value="" id="id_store">
+                    <div class="submit">
+                        <button onclick="createGreetings()">Submit</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 
     <div id="edit-greetingId" class="w3-modal">
-        <div class="w3-modal-content">
-            <div class="form-container">
-                <div class="greetings-form">
-                    <form>
-                        <div><label for="edit-fname"> Edit First name:</label></div>
-                        <div><input type="text" id="edit-fname" name="edit-fname" autocomplete="off"
-                                pattern="[A-Z]{1}[a-z]{2,}" value=""></div>
-                        <div><label for="edit-lname"> Edit Greetings:</label></div>
-                        <div><input type="text" id="edit-lname" name="edit-lname" autocomplete="off"
-                                pattern="[A-Z]{1}[a-z]{2,}" value=""></div>
-                        <div><input value="" id="id_edit_store" style="display: none;"></div>
-                        <div class="submit">
-                            <button onclick="updateGreetings()">Submit</button>
-                        </div>
-                    </form>
-                </div>
+        <div class="modal-content">
+            <div class="greetings-form">
+                <form>
+                    <div class="label"><label for="edit-fname">Name</label></div>
+                    <div class="input"><input type="text" id="edit-fname" name="edit-fname" autocomplete="off" value="">
+                    </div>
+                    <div class="label"><label for="edit-greeting">Greetings</label></div>
+                    <div class="input"><input type="text" id="edit-greeting" name="edit-greeting" autocomplete="off"
+                            value="">
+                    </div>
+                    <div><input value="" id="id_edit_store"></div>
+                    <div class="submit">
+                        <button onclick="updateGreetings()">Submit</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 
     <div id="delete-greetingId" class="w3-modal">
-        <div class="w3-modal-content">
-            <div class="form-container">
-                <div class="greetings-form">
-                    <form>
-                        <label>Are you sure you want to delete</label><br>
-                        <input value="" id="id_del">
-                        <button onclick="remove()">Yes</button>
+        <div class="modal-content">
+            <div class="greetings-form">
+                <form>
+                    <div class="label"><label>Are you sure you want to delete</label></div>
+                    <input value="" id="id_del">
+                    <div class="submit"><button onclick="remove()">Yes</button>
                         <button onclick="document.getElementById('delete-greetingId')">No</button>
-                    </form>
-                </div>
+                    </div>
             </div>
+
+            </form>
         </div>
+    </div>
     </div>
 
     <script src="script.js"></script>
